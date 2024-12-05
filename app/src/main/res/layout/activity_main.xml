@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#49396F"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="@font/adlam_display"
+        android:hint="@string/app_name"
+        android:textColorHint="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCelsius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="#FFFEFE"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvResposta"
+        app:layout_constraintStart_toStartOf="@+id/tvCelsius"
+        app:layout_constraintTop_toBottomOf="@+id/tvCelsius" />
+
+    <TextView
+        android:id="@+id/tvCelsius"
+        android:layout_width="251dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/adlam_display"
+        android:hint="@string/tvCelsius"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etCelsius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <Button
+        android:id="@+id/btnFarenheit"
+        android:layout_width="277dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="47dp"
+        android:background="#E0DAEB"
+        android:fontFamily="@font/acme"
+        android:hint="@string/btnFarenheit"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKelvin" />
+
+    <Button
+        android:id="@+id/btnKelvin"
+        android:layout_width="277dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="27dp"
+        android:background="#E0DAEB"
+        android:fontFamily="@font/acme"
+        android:hint="@string/btnKelvin"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFarenheit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResposta" />
+
+    <TextView
+        android:id="@+id/tvResposta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="115dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnKelvin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCelsius" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

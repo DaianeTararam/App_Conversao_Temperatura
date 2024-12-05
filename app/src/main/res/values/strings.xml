@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Conversor de Temperatura</string>
+    <string name="tvCelsius">Digite a temperatura em Celsius</string>
+    <string name="etCelsius">Temperatura em Celsius</string>
+    <string name="tvKelvin">A temperatura em Kelvin é </string>
+    <string name="tvFarenheit">A temperatura em Farenheit é </string>
+    <string name="btnFarenheit">Converter para Farenheit</string>
+    <string name="btnKelvin">Converter para Kelvin</string>
+    <string name="tvResposta">Resposta: </string>
+
+</resources>
